@@ -19,6 +19,10 @@ document.querySelector('.btn_translate').addEventListener('click', function(even
     document.querySelector('.pop_language').classList.add('open');
     document.body.style.overflow = 'hidden';
   });
+  document.querySelector('.social_translate button').addEventListener('click', function(event) {
+    document.querySelector('.pop_language').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
 document.querySelector('.pop_close').addEventListener('click', function(event) {
     document.querySelector('.pop_language').classList.remove('open');
     document.body.style.overflow = '';
