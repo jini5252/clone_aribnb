@@ -39,9 +39,28 @@ document.querySelector('.pop_close').addEventListener('click', function(event) {
     document.body.style.overflow = '';
  });
 
+ /* 필터 버튼 클릭시 팝업창 */ 
 document.querySelector('.btn_filter').addEventListener('click', function(event) {
     document.querySelector('.width_type02').style.display = 'block';
     document.body.style.overflow = 'hidden';
+    
+    const btns = document.querySelectorAll(".acc_menu_btn");
+    btns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const acc_menu = btn.parentElement;
+        const parent = acc_menu.nextElementSibling;
+
+        const isActive = btn.classList.contains("open");
+        if (!isActive) {
+          btn.classList.add("open")
+          parent.classList.add("open");
+        }else{
+          btn.classList.remove("open")
+          parent.classList.remove("open");
+        }
+      });
+    });
+    
   });
   document.querySelector('.width_type02 .pop_close').addEventListener('click', function(event) {
     document.querySelector('.width_type02').style.display = 'none';
@@ -68,34 +87,4 @@ document.querySelector('.btn_filter').addEventListener('click', function(event) 
 
 document.querySelector('.slide_like button').addEventListener('click', function(event) {
   element.classList.toggle('disabled');
-});
-/* 팝업 아코디언  */
-
-// const acc_btn =  document.querySelector('.acc_menu_btn button');
-
-// acc_btn.forEach( button =>{
-// button.addEventListener('click', function(){
-//   const siblings = Array.from(this.parentElement.children);
-//   siblings.forEach(el => {})
-//   });
-// });
-
-// let acc_btn = $('.acc_menu_btn button');
-
-// acc_btn.on('click', function () {
-//   $(this).addClass('open');
-//   const accCont = $(this).siblings('.acc_cont');
-//   accCont.css('display', 'block');
-// });
-const buttons = document.querySelectorAll('.acc_menu_btn button');
-
-buttons.forEach(button => {
-  button.addEventListener('click', function() {
-    const siblings = Array.from(this.parentElement.children);
-    siblings.forEach(el => {
-      if (el !== this && el.classList.contains('acc_cont')) {
-        el.classList.add('open'); 
-      }
-    });
-  });
 });

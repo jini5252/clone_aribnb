@@ -83,7 +83,7 @@
 .search_wrap.top .search_item:nth-child(3) .search_item_tit{padding-right:50px;}
 .search_wrap.top .search_item button .search_item_tit{font-size: 15px;}
 .search_wrap.top.active{display:flex;opacity:1;transform:translateY(0) scale(1);height:48px;}
-.search_wrap.top .search_item button {padding:18px 10px;min-width:max-content;}
+.search_wrap.top .search_item button {padding:18px 15px;min-width:max-content;}
 .search_wrap.top .btn_search .icon_search button{width:32px;height:32px;}
 
 .search_wrap{transition: opacity 0.4s ease, transform 0.4s ease;}
@@ -267,24 +267,24 @@ footer .footer_bottom_area .copyright_desc{padding:10px;font-size: 0.625rem;line
 .popup_wrap .popup_container .popup_contents .pop_section .option_btn button:focus,
 .popup_wrap .popup_container .popup_contents .pop_section .option_btn button:hover{padding:11px 17px;border:2px solid var(--main-color);background:var(--bg-color);}
 .popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon{display:block;margin-right:5px;background:var(--image-background);width:24px;height:24px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico01{background-position:0 -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico02{background-position:-24px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico03{background-position:-48px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico04{background-position:-72px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico05{background-position:-96px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico06{background-position:-120px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico07{background-position:-144px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico08{background-position:-168px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico09{background-position:-168px -182px;}
-.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico10{background-position:-192px -182px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico01{background-position:0 -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico02{background-position:-24px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico03{background-position:-48px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico04{background-position:-72px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico05{background-position:-96px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico06{background-position:-144px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico07{background-position:-120px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico08{background-position:-168px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico09{background-position:-192px -214px;}
+.popup_wrap .popup_container .popup_contents .pop_section .option_btn button .option_icon.ico10{background-position:-216px -214px;}
 .popup_wrap .popup_container .popup_contents .pop_section .btn_guest{display:flex;padding:16px;box-sizing:border-box;border:1px solid var(--border-color);border-radius:10px;text-align:left;}
 .popup_wrap .popup_container .popup_contents .pop_section .btn_guest:hover{border:1px solid var(--main-color)}
-.popup_wrap .popup_container .popup_contents .pop_section .btn_guest .btn_guest_icon{padding:6px;margin:6px 15px 0 0;background:var(--image-background);background-position:0 -206px;width:32px;height:32px;}
+.popup_wrap .popup_container .popup_contents .pop_section .btn_guest .btn_guest_icon{padding:6px;margin:6px 15px 0 0;background:var(--image-background);background-position:0 -162px;width:20px;height:20px;}
 .popup_wrap .popup_container .popup_contents .pop_section .btn_guest .btn_guest_tit{display: block;font-size:16px;font-weight:var(--font-weight-medium);}
 .popup_wrap .popup_container .popup_contents .pop_section2 .btn_guest .btn_guest_text{display:block;color:var(--sub-color);}
 .popup_wrap .popup_container .popup_contents .pop_section .acc_menu{position: relative;height:72px;padding:24px 0;box-sizing: border-box;cursor: pointer;}
 .popup_wrap .popup_container .popup_contents .pop_section .acc_menu button{position: absolute;right:0;top:24px;width:12px;height:12px;border-top:2px solid var(--main-color);border-left:2px solid var(--main-color);transform:rotate(-135deg);}
-.popup_wrap .popup_container .popup_contents .pop_section .acc_menu button.open{transform:rotate(45deg);}
+.popup_wrap .popup_container .popup_contents .pop_section .acc_menu_btn.open button{transform:rotate(45deg);}
 .popup_wrap .popup_container .popup_contents .pop_section .acc_cont{display:none;}
 .popup_wrap .popup_container .popup_contents .pop_section .acc_cont.open{display:block;}
 .popup_wrap .popup_container .popup_contents .pop_section .acc_cont .acc_sub_tit{padding:24px 0;font-size:1.1em;font-weight: var(--font-weight-medium);}
