@@ -72,10 +72,12 @@ document.querySelector('.btn_filter').addEventListener('click', function(event) 
   const thumbnail_pos = document.querySelector('.main_contents_list');
   const rect = thumbnail_pos.getBoundingClientRect().bottom;
   const desc_map = document.querySelector('.desc_map');
-  console.log(rect);
+
   window.addEventListener('scroll', function() {
-    var this_scroll = window.scrollY;
-    if(this_scroll < 500){
+    let this_scroll = window.scrollY;    
+    console.log(this_scroll);
+    let footer_top = document.querySelector('footer').getBoundingClientRect().top;
+    if(this_scroll < footer_top){
       desc_map.classList.add('fixed');
     }else{
       desc_map.classList.remove('fixed');

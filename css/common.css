@@ -75,7 +75,7 @@
 .header .header_wrap .user_area .btn_translate_icon{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);display:block;width:16px;height:16px;background:var(--image-background);background-position:0 -32px;text-indent:-55555px;}
 .header .header_bottom{max-width:850px;margin:0 auto;min-width:0; transition: opacity 0.4s ease, transform 0.4s ease}
 .header .header_bottom.hide{transform: translateY(-90px) scaleX(0.5);opacity:0;}
-.search_wrap{position: relative;display:flex;border:1px solid var(--border-color);overflow:hidden;border-radius:32px;box-shadow:2px 2px 2px #ddd;}
+.search_wrap{position: relative;display:flex;border:1px solid var(--border-color);overflow:hidden;border-radius:32px;box-shadow:1px 1px 10px #ddd;}
 .search_top{transition: opacity 0.4s ease, transform 0.4s ease;width:auto}
 .search_top.active{display:flex;opacity:0;transform: translateY(20px);}
 .search_wrap.top{opacity:0;transition: opacity 0.3s cubic-bezier(0, 0, 0.66, 0.2); transform 0.1s ease;transform:translateY(30px);display: none;flex:0 1 auto}
@@ -91,10 +91,10 @@
 .search_wrap .search_item{display:flex;width:33.33%;height:100%}
 .search_wrap .search_item .search_box{position:relative;width:100%;}
 .search_wrap .search_item.two_col .search_box{width:50%;}
-.search_wrap .search_item .search_box:after{position:absolute;right:0;top:50%;transform:translateY(-50%);display:block;content:"";width:1px;height:38px;background:var(--bg-color);}
+.search_wrap .search_item .search_box:after{position:absolute;right:0;top:50%;transform:translateY(-50%);display:block;content:"";width:1px;height:38px;background:var(--border-color);}
 .search_wrap .search_item button{display:block;width:calc(100% - 1px);height:100%;padding:14px 32px;cursor:pointer;box-sizing:border-box;}
 .search_wrap .search_item button .search_item_tit{text-align:left;line-height:1rem;font-size:var(--fs-caption);}
-.search_wrap .search_item button .search_item_desc input[type="text"]{margin-top:5px;height:1.125rem;line-height:1.125rem;border:none;width:100%;}
+.search_wrap .search_item button .search_item_desc input[type="text"]{margin-top:2px;height:1.125rem;line-height:1.125rem;border:none;width:100%;}
 .search_wrap .search_item label:hover{background-color:#efefef;border-radius:32px;}
 .search_wrap .btn_search{position:absolute;top:10px;right:10px}
 .search_wrap .btn_search .icon_search button{display:block;padding:0;width:48px;height:48px;border-radius:50%;background-color:var(--brand-color);}
@@ -104,6 +104,8 @@
 .main .main_tab_area.fixed{position:fixed;left:0;top:100px;width:100%;background:#fff;z-index: 12;;box-shadow:2px 2px 3px #ddd;box-sizing:border-box;}
 .main .main_tab_area .main_tab_list_view{padding-top:12px;width:100%;height:100%;display:flex;justify-content:space-between;align-items:center;}
 .main .main_tab_area .tab_menu_list{padding:0 60px}
+.main .main_tab_area  .swiper-button-next,
+.main .main_tab_area .swiper-button-prev{box-shadow:2px 2px 30px 35px rgba(255,255,255,1);}
 .main .main_tab_area .tab_menu_list.swiper{width:100%;height:100%;}
 .main .main_tab_area .tab_menu_list.swiper .swiper-slide{flex-shrink:0;}
 /* .main .main_tab_area .tab_menu_list ul{display:flex;justify-content:start;align-items:center;} */
@@ -124,8 +126,8 @@
 .btn_filter .btn_filter_txt{font-size:var(--fs-caption);}
 
 .main_contents_area {padding:12px 80px 0;}
-.main_contents_area .main_contents_list{display:flex;justify-content:start;gap:20px;max-width:2520px;flex-wrap:wrap;}
-.main_contents_area .main_content{position:relative;width:14.5%;margin-bottom:20px;}
+.main_contents_area .main_contents_list{display:grid;max-width:2520px;gap:20px;}
+.main_contents_area .main_content{position:relative;}
 .main_contents_area .main_content .thumbnail_area{margin-bottom: 12px;}
 .main_contents_area .main_content .thumbnail_area ul li{position: relative;}
 .main_contents_area .main_content .thumbnail_area ul li a .slide_sec.swiper_btn{transition: opacity 0.4s ease;opacity:0;}
@@ -155,7 +157,7 @@
 .main_contents_area .main_content .thumnail_info_price{font-size:var(--fs-normal-em);font-weight:var(--font-weight-medium);}
 .main_contents_area .view_more{margin-top:56px;text-align:center;font-weight:var(--font-weight-medium);}
 .main_contents_area .view_more .desc_view_more p{font-size:18px;}
-.main_contents_area .view_more .desc_map{position:fixed;bottom:60px;left:calc(50% - 70px);display:flex;justify-content:center;margin-top:10px;opacity:0;transition: opacity 0.5s ease-in;}
+.main_contents_area .view_more .desc_map{position:fixed;bottom:60px;left:calc(50% - 70px);display:flex;justify-content:center;margin-top:10px;opacity:0;transition: opacity 0.1s ease-in;}
 .main_contents_area .view_more .desc_map.fixed{z-index:12;opacity:1;}
 .main_contents_area .view_more .desc_map button{display:flex;justify-content:center;align-items:center; padding:14px 20px;border-radius:30px;background:var(--main-color);color:#fff}
 .main_contents_area .view_more .desc_map button span{display:block;}
@@ -300,17 +302,22 @@ footer .footer_bottom_area .copyright_desc{padding:10px;font-size: 0.625rem;line
 .popup_wrap .popup_container .popup_contents .pop_footer .pop_footer_tit button{display: block;font-size:1rem;font-weight: var(--font-weight-medium);line-height:1.25rem;}
 .popup_wrap .popup_container .popup_contents .pop_footer .pop_footer_btn a{display: block;background: var(--main-color);color:#fff;font-weight:var(--font-weight-medium);border-radius:8px;line-height:1.25rem;padding:14px 24px;font-size:1rem;}
 .popup_wrap .popup_container{padding:40px;height:calc(100vh - 80px)}
+@media (max-width: 743px){
+    .main_contents_area{padding:12px 20px 50px}
+    .main_contents_area .main_contents_list{grid-template-columns: repeat(2, minmax(50px, 1fr))}
 
+}
 @media (min-width: 744px){
     .popup_wrap .popup_contents{width:100%;height:100%;max-width:1032px;max-height:100%}
     .popup_wrap.width_type02 .popup_contents {width:100%;height:100%;max-width:568px;max-height:100%}
     .popup_wrap .popup_container .popup_contents .pop_section .count_box li .count_area .btn_count_text{min-width:80px;}
+    .main_contents_area .main_contents_list{grid-template-columns: repeat(4, minmax(50px, 1fr))}
 }
 @media (min-width: 1128px){
-    .main_contents_area .main_content{width:calc(25% - 20px);}
+    .main_contents_area .main_contents_list{grid-template-columns: repeat(5, minmax(50px, 1fr))}
 }
 @media (min-width: 1880px){
-    .main_contents_area .main_content{width:calc(16.6% - 20px);}
+    .main_contents_area .main_contents_list{grid-template-columns: repeat(6, minmax(50px, 1fr))}
     footer .footer_inner{max-width:1130px;margin:0 auto;}
 
 }

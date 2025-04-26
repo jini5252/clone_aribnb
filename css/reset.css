@@ -61,6 +61,7 @@ table {
 a{
 	text-decoration:none;
 	cursor: pointer;
+	color:#222;
 }
 
 a:visited{

@@ -296,7 +296,7 @@
                                                     <div class="thumb swiper-button-prev"></div>
                                                 </div>
                                                 <div class="slide_sec">
-                                                    <div class="thumb-pagination"></div>
+                                                    <div class="thumb-pagination swiper-pagination"></div>
                                                 </div>
                                             </div>
                                        </a>
@@ -1105,15 +1105,16 @@
         var swiper = new Swiper(".menu_swiper", {
           spaceBetween: 60,
           freeMode: true,
+          lopp: true,
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
-        },
+            },
         });
         var swiper02 = new Swiper(".thumb_swiper", {
             loop: true,
             pagination: {
-                el: ".thumb-pagination",
+                el: ".thumb-pagination.swiper-pagination",
                 clickable: false,
             },
             navigation: {
