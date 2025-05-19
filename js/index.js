@@ -1,31 +1,19 @@
 window.addEventListener('scroll', function() {
     var this_scroll = window.scrollY;
     if(this_scroll > 100){
-
-        document.querySelector('.search_wrap.top').classList.add('active');
-        document.querySelector('.header_bottom').classList.add('hide');
+        document.querySelector('.search_wrap').classList.add('top');
+        // document.querySelector('.header_bottom').classList.add('hide');
         document.querySelector('.header').classList.add('fixed');
         document.querySelector('.main_tab_area').classList.add('fixed');
 
     }else{
-        document.querySelector('.search_wrap.top').classList.remove('active');
-
-        document.querySelector('.header_bottom').classList.remove('hide');
+        document.querySelector('.search_wrap').classList.remove('top');
+        // document.querySelector('.header_bottom').classList.remove('hide');
         document.querySelector('.header').classList.remove('fixed');
         document.querySelector('.main_tab_area').classList.remove('fixed');
     }
-
 });
-// window.addEventListener('scroll', function() {
-//   var this_scroll = window.scrollY;
-//   if(this_scroll > 100){
 
-
-//   }else{
-
-//   }
-
-// });
 document.querySelector('.btn_translate').addEventListener('click', function(event) {
     document.querySelector('.pop_language').classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -38,6 +26,14 @@ document.querySelector('.pop_close').addEventListener('click', function(event) {
     document.querySelector('.pop_language').classList.remove('open');
     document.body.style.overflow = '';
  });
+
+/* 나의정보 클릭시 팝업창*/
+
+document.querySelector('.btn_user').addEventListener('click', function(event) {
+  document.querySelector('.pop_login').classList.add('open');
+  //document.body.style.overflow = 'hidden';
+});
+
 
  /* 필터 버튼 클릭시 팝업창 */ 
 document.querySelector('.btn_filter').addEventListener('click', function(event) {

@@ -26,7 +26,7 @@
         <header class="header">
             <div class="header_wrap">
                 <h1 class="logo"><a href="" title="airbnb"><div class="logo_img"></div></a></h1>
-                <div class="search_wrap top">
+                <!-- <div class="search_wrap top">
                     <div class="search_item">
                         <div class="search_box">
                             <button for="">
@@ -51,7 +51,7 @@
                             <div class="icon_search"><button></button></div>
                         </div>
                     </div>  
-                </div>
+                </div> -->
                 <div class="user_area">
                     <a href="https://www.airbnb.co.kr/host/homes" class="link_goto_start">당신의 공간을 에어비엔비하세요</a>
                     <button class="btn_translate"><span class="btn_translate_icon">번역</span></button>     
@@ -61,7 +61,12 @@
             <div class="header_bottom">
                 <div class="search_wrap">
                     <div class="search_item">
-                        <div class="search_box">
+                        <div class="search_box ty02">
+                            <button for="">
+                                <div class="search_item_tit">어디든지</div>
+                            </button>
+                        </div>
+                        <div class="search_box ty01">
                             <button for="">
                                 <div class="search_item_tit">여행지</div>
                                 <div class="search_item_desc"><input type="text" placeholder="여행지 검색"></div>
@@ -69,37 +74,47 @@
                         </div>
                     </div>
                     <div class="search_item two_col">
-                        <div class="search_box">
+                        <div class="search_box ty02">
+                            <button for="">
+                                <div class="search_item_tit">언제든지</div>
+                            </button>
+                        </div>
+                        <div class="search_box ty01">
                             <button for="">
                                 <div class="search_item_tit">체크인</div>
                                 <div class="search_item_desc"><input type="text" placeholder="날짜 추가"></div>
                             </button>
                         </div>
-                        <div class="search_box">
+                        <div class="search_box ty01">
                             <button for="">
                                 <div class="search_item_tit">체크아웃</div>
-                                <div class="search_item_desc"><input type="text" placeholder="날짜 추가"></div>
+                                 <div class="search_item_desc"><input type="text" placeholder="날짜 추가"></div> 
                             </button>
                         </div>
                     </div>
                     <div class="search_item">
-                        <div class="search_box">
+                        <div class="search_box ty02">
                             <button for="">
-                                <div class="search_item_tit">여행지</div>
-                                <div class="search_item_desc"><input type="text" placeholder="게스트 추가"></div>
+                                <div class="search_item_tit">게스트추가</div>
                             </button>
                         </div>
-                        <div class="btn_search">
-                            <div class="icon_search"><button></button></div>
+                        <div class="search_box ty01">
+                            <button for="">
+                                <div class="search_item_tit">여행지</div>
+                                <div class="search_item_desc"><input type="text" placeholder="게스트 추가"></div> 
+                            </button>
                         </div>
-                    </div>  
+                    </div>
+                    <div class="btn_search">
+                        <div class="icon_search"><button></button></div>
+                    </div>
                 </div>
             </div>
         </header>
         <div class="main">
             <div class="main_tab_area">
                 <div class="main_tab_list_view">
-                    <div class="tab_menu_list swiper menu_swiper">
+                    <div class="tab_menu_list  swiper menu_swiper">
                         <ul class="swiper-wrapper">
                             <li class="tab_menu_item swiper-slide">
                                 <input type="radio" class="active">
@@ -248,10 +263,10 @@
                                    <div class="tab_menu_tit">한옥</div>
                                </label>
                             <li>                                                                                                                                           
-                        </ul>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+     </ul>
+                        <div class="menu swiper-button-next"></div>
+                        <div class="menu swiper-button-prev"></div>
+                        <div class="swiper-pagination menu"></div>
                     </div>
                     
                     <button class="btn_filter">
@@ -327,7 +342,7 @@
                                 <ul>
                                     <li class="">
                                         <a href="https://www.airbnb.co.kr/rooms/1241647418375174778?category_tag=Tag%3A677&search_mode=flex_destinations_search&adults=1&check_in=2025-04-20&check_out=2025-04-25&children=0&infants=0&pets=0&photo_id=1990060093&source_impression_id=p3_1744650182_P3ABXzpU7oRFtx3L&previous_page_section_name=1000&federated_search_id=142c4a04-4577-4001-9024-27079c0c3f55">
-                                            <div class="slide_img swiper thumb_swiper">
+                                            <div class="slide_img swiper thumb_swiper02">
                                                 <ul class="swiper-wrapper">
                                                     <li class="slide_img_item swiper-slide"><img src="./images/image_slide01.png" alt=""></li>
                                                     <li class="slide_img_item swiper-slide"><img src="./images/image_slide01.png" alt=""></li>
@@ -350,11 +365,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="slide_sec swiper_btn">
-                                                    <div class="thumb swiper-button-next"></div>
-                                                    <div class="thumb swiper-button-prev"></div>
+                                                    <div class="thumb02 swiper-button-next"></div>
+                                                    <div class="thumb02 swiper-button-prev"></div>
                                                 </div>
                                                 <div class="slide_sec">
-                                                    <div class="thumb-pagination"></div>
+                                                    <div class="thumb-pagination02"></div>
                                                 </div>
                                             </div>
                                        </a>
@@ -869,9 +884,12 @@
                 <div class="pop_main02">
                 <div class="pop_cont02">
                     <div class="pop_section">
+                        <div class="pop_tit_box">
+                            <h2 class="pop_title02">숙소 유형</h2>
+                        </div>
                         <div class="pop_tab">
                             <ul>
-                                <li><a href="">모든유형</a></li>
+                                <li class="active"><a href="">모든유형</a></li>
                                 <li><a href="">방</a></li>
                                 <li><a href="">집 전체</a></li>
                             </ul>
@@ -1097,18 +1115,77 @@
             </div>
             </div>
         </div>
-        <script>
-
-        </script>
     </div>
+    <div class="popup_wrap width_type02 pop_login" id="" style="">
+        <div class="dim"></div>
+        <div class="popup_container type02">
+            <div class="popup_contents">
+                <div class="pop_header">
+                    <h1>로그인 또는 회원 가입</h1>
+                    <div class="pop_close">
+                        <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path d="m6 6 20 20M26 6 6 26"></path></svg></button>
+                    </div>
+                </div>
+                <div class="pop_main03">
+                    <div class="pop_cont">
+                        <h2 class="pop_title">에어비앤비에 오신 것을 환영합니다.</h2>
+                        <div class="telephone_box">
+                            <div class="telephone_select">
+                                <label for="">국가/지역</label>
+                                    <select name="" id="">
+                                        <option value="">이라크</option>
+                                        <option value="">에콰도르</option>
+                                        <option value="">영국</option>
+                                    </select>
+                                    <span class=""></span>
+                                
+                            </div>
+                            <div class="telephone_num">
+                                <label for="">전화번호
+                                    <input type="text" />
+                                </label>
+                            </div>
+                        </div>
+                            <p class="login_txt">전화나 문자로 전화번호를 확인하겠습니다. 일반 문자 메시지 요금 및 데이터 요금이 부과됩니다. <a>개인정보 처리방침</a></p>
+                            <div class="login_btn">
+                                <button>계속</button>
+                            </div>
+                            <div class="or_box">
+                                <span>또는</span>
+                            </div>
+                            <div class="sns_login">
+                                <div class="sns_login_btn naver">
+                                    <button><span class="sns_login_icon"></span><span class="sns_login_txt">네이버로 로그인하기</span></button>
+                                </div>
+                                <div class="sns_login_btn google">
+                                    <button><span class="sns_login_icon"></span><span class="sns_login_txt">구글로 로그인하기</span></button>
+                                </div>
+                                <div class="sns_login_btn apple">
+                                    <button><span class="sns_login_icon"></span><span class="sns_login_txt">애플로 로그인하기</span></button>
+                                </div>
+                                <div class="sns_login_btn email">
+                                    <button><span class="sns_login_icon"></span><span class="sns_login_txt">이메일로 로그인하기</span></button>
+                                </div>
+                                <div class="sns_login_btn facebook">
+                                    <button><span class="sns_login_icon"></span><span class="sns_login_txt">페이스북으로 로그인하기</span></button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
     <script>
         var swiper = new Swiper(".menu_swiper", {
           spaceBetween: 60,
           freeMode: true,
-          lopp: true,
+        slidesPerView: 10,
+        // slideOffsetAfter:0,
+        //   loop: true,
+        watchOverflow:false,
           navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".menu.swiper-button-next",
+            prevEl: ".menu.swiper-button-prev",
             },
         });
         var swiper02 = new Swiper(".thumb_swiper", {
@@ -1122,6 +1199,20 @@
                 prevEl: ".thumb.swiper-button-prev",
             },
             });
+
+            var swiper03 = new Swiper(".thumb_swiper02", {
+            loop: true,
+            pagination: {
+                el: ".thumb-pagination02.swiper-pagination",
+                clickable: false,
+            },
+
+            
+            navigation: {
+                nextEl: ".thumb.swiper-button-next",
+                prevEl: ".thumb.swiper-button-prev",
+            },
+            });    
       </script>
       <script src="js/index.js"></script>
 </body>
