@@ -5,7 +5,6 @@ window.addEventListener('scroll', function() {
         // document.querySelector('.header_bottom').classList.add('hide');
         document.querySelector('.header').classList.add('fixed');
         document.querySelector('.main_tab_area').classList.add('fixed');
-
     }else{
         document.querySelector('.search_wrap').classList.remove('top');
         // document.querySelector('.header_bottom').classList.remove('hide');
@@ -22,8 +21,9 @@ document.querySelector('.btn_translate').addEventListener('click', function(even
     document.querySelector('.pop_language').classList.add('open');
     document.body.style.overflow = 'hidden';
   });
+
 document.querySelector('.pop_close').addEventListener('click', function(event) {
-    document.querySelector('.pop_language').classList.remove('open');
+    document.querySelector('.popup_wrap').classList.remove('open');
     document.body.style.overflow = '';
  });
 
@@ -82,7 +82,6 @@ document.querySelector('.btn_filter').addEventListener('click', function(event) 
 
 
 /*like 버튼 */
-
 document.querySelector('.slide_like button').addEventListener('click', function(event) {
   element.classList.toggle('disabled');
 });
