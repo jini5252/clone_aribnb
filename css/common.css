@@ -348,7 +348,9 @@ footer .footer_bottom_area .copyright_desc{padding:10px;font-size: 0.625rem;line
 .popup_wrap .popup_container .pop_cont .sns_login .sns_login_btn.facebook button .sns_login_icon{background-position:-80px -194px;}
 
 @media (max-width: 743px){
+    .header .header_wrap{padding:0 20px}
     .header .header_wrap .user_area{display: none;}
+    .header .header_bottom{padding:0 20px}
     .main{padding-bottom:50px}
     .main .main_tab_area{display: none;}
     .main_contents_area{padding:12px 20px 20px}
@@ -370,10 +372,13 @@ footer .footer_bottom_area .copyright_desc{padding:10px;font-size: 0.625rem;line
     .main_contents_area .main_contents_list{grid-template-columns: repeat(4, minmax(50px, 1fr))}
 }
 @media (min-width: 744px) and (max-width:1127px){
+    .header .header_wrap,
+    .header .header_bottom{padding:0 40px}
     .main_contents_area{padding:12px 40px 50px}
 }
 @media (min-width: 1128px){
     .main_contents_area .main_contents_list{grid-template-columns: repeat(5, minmax(50px, 1fr))}
+    .btn_filter{padding:7px}
 
 }
 @media (min-width: 1880px){
