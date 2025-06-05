@@ -846,7 +846,7 @@ footer .footer_bottom_area .footer_bottom_section .social_wrap .btn_currency but
 footer .footer_bottom_area .footer_bottom_section .social_wrap .social_translate_icon {
     position: absolute;
     left: 8px;
-    top: 8.popup_wrap .popup_container .popup_contents .pop_section .acc_cont .acc_checkbox ul li input[type="checkbox"]:checked + label:afterpx;
+    top:10px;
     display: block;
     width: 15px;
     height: 15px;
@@ -918,12 +918,17 @@ footer .footer_bottom_area .copyright_desc {
 }
 
 .popup_wrap {
-    display: none;
+     display: none;
 }
-
-.popup_wrap.pop_language.open {
+.popup_wrap.open {
     display: block;
 }
+
+
+/*
+.popup_wrap.pop_language.open {
+     display: block;
+}  */
 
 .popup_wrap .dim {
     position: fixed;
@@ -948,16 +953,12 @@ footer .footer_bottom_area .copyright_desc {
 }
 
 .popup_wrap .popup_container .popup_contents {
-    position: absolute;
+    position: relative;
     z-index: 2;
     background: #fff;
     border-radius: 30px;
     overflow: hidden;
-    top:-500px;
-    opacity:0;
-
-    transform:translateY(-50%) ;
-    
+    animation:modal 0.4s ease-in-out;
 }
 
 /* .popup_wrap.pop_language .popup_container .popup_contents {
@@ -968,9 +969,7 @@ footer .footer_bottom_area .copyright_desc {
 } */
 
 .popup_wrap.open .popup_container .popup_contents {
-    top: 50%;
-    opacity: 1;
-    transition:all 1s ease-in-out;
+
 }
 
 .popup_wrap .popup_container .popup_contents .pop_close {
@@ -1016,6 +1015,7 @@ footer .footer_bottom_area .copyright_desc {
 }
 
 .popup_wrap .popup_container .popup_contents .pop_header {
+    position:relative;
     height: 64px;
     padding: 0 24px;
     line-height: 64px;
@@ -1547,9 +1547,9 @@ footer .footer_bottom_area .copyright_desc {
 
 /* 로그인 또는 회원가입 */
 
-.pop_login.open {
+/* .pop_login.open {
     display: block;
-}
+} */
 
 .popup_wrap .popup_container .pop_cont .telephone_box {
     margin-top: 20px;
@@ -1832,12 +1832,11 @@ footer .footer_bottom_area .copyright_desc {
 @keyframes modal {
     0%{
         opacity:0;
-        top:-100px; 
+        transform:translateY(-50px);
     }
     100%{
         opacity:1;
-        top:50%;
-        transform:translateY(-50%);
+        transform:translateY(0);
     }
 
 }
