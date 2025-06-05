@@ -24,6 +24,7 @@ document.querySelector('.btn_translate').addEventListener('click', function(even
 
 document.querySelector('.pop_close').addEventListener('click', function(event) {
     document.querySelector('.popup_wrap').classList.remove('open');
+    document.querySelector('.popup_wrap').classList.add('hide');
     document.body.style.overflow = '';
  });
 
@@ -37,7 +38,7 @@ document.querySelector('.btn_user').addEventListener('click', function(event) {
 
  /* 필터 버튼 클릭시 팝업창 */ 
 document.querySelector('.btn_filter').addEventListener('click', function(event) {
-    document.querySelector('.width_type02').style.display = 'block';
+  document.querySelector('.popup_wrap').classList.add('open');
     document.body.style.overflow = 'hidden';
     
     const btns = document.querySelectorAll(".acc_menu_btn");
